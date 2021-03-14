@@ -24,7 +24,8 @@ go build
 
 You can either double-click to run, or use the command line.
 
-```C:\Users\Cyrus\Desktop\FileZillaExtractor>.\FileZilla-Exporter.exe -h
+```
+C:\Users\Cyrus\Desktop\FileZillaExtractor>.\FileZilla-Exporter.exe -h
 NAME:
    FileZilla Exporter - Export server logins/key files
 
