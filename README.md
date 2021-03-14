@@ -2,7 +2,7 @@
 
 ### NOTE: Any other operating system but windows will ask you to specify the path.
 
-Allows you to easily extract server login data from FileZilla (host/port/user/pass/keyfile (if it has one)) through the command line! 
+Allows you to easily extract server login data from FileZilla (host/port/user/pass/keyfile (if it has one)) and store it in a JSON format for easy readability.
 
 ### Install
 [Windows binary only](https://github.com/Not-Cyrus/FileZilla-Extractor/releases)
