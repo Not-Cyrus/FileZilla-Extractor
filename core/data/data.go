@@ -65,12 +65,16 @@ func SaveManagers(s structs.SiteManagerList) {
 	managedServers := HandleManagedServer(s)
 	err := utils.WriteJSON("Site Manager Servers.json", managedServers)
 	log.HandleError(err)
+
+	fmt.Printf("Exported %d managed servers\n", len(managedServers.Servers))
 }
 
 func SaveRecent(s structs.RecentServerList) {
-	managedServers := HandleRecentServers(s)
-	err := utils.WriteJSON("Recent Servers.json", managedServers)
+	recentServers := HandleRecentServers(s)
+	err := utils.WriteJSON("Recent Servers.json", recentServers)
 	log.HandleError(err)
+
+	fmt.Printf("Exported %d recently connected servers\n", len(recentServers.Servers))
 }
 
 type (
