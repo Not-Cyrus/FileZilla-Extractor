@@ -52,6 +52,7 @@ func Run() {
 
 			data.SaveManagers(managedServers)
 
+			fmt.Printf("Exported %d managed servers and %d recently connected servers to the results folder.\n", len(managedServers.AllServers.Servers), len(recentServers.AllServers.Servers))
 			return nil
 		},
 	}
