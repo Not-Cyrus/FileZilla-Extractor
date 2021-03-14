@@ -18,7 +18,6 @@ func Run() {
 		Flags: []cli.Flag{
 			&cli.StringFlag{Name: "savetype", Aliases: []string{"st"}, Destination: &saveType, Value: "all", Usage: "switch the save type between all/managed/recent"},
 			&cli.BoolFlag{Name: "verbose", Aliases: []string{"vv"}, Destination: &verbose, Value: false, Usage: "verbose"},
-			&cli.StringFlag{Name: "results-dir", Aliases: []string{"dir"}, Destination: &exportDir, Value: "results", Usage: "export dir"},
 		},
 		HideHelpCommand: true,
 		Action: func(c *cli.Context) error {
@@ -29,7 +28,7 @@ func Run() {
 				log.InitLog("error")
 			}
 
-			log.HandleError(utils.MakeDir(exportDir))
+			log.HandleError(utils.MakeDir("results"))
 			core.InitOS()
 
 			managedServers, err := core.GetSiteManagers()
@@ -63,7 +62,6 @@ func Run() {
 }
 
 var (
-	exportDir string
 	saveType  string
 	verbose   bool
 )
