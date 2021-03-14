@@ -41,3 +41,20 @@ GLOBAL OPTIONS:
    --help, -h                        show help (default: false)
    --version, -v                     print the version (default: false)
 ```
+
+```
+C:\Users\User\Desktop\FileZillaExtractor>.\FileZilla-Exporter.exe --st all
+Exported 1 managed servers
+Exported 10 recently connected servers
+```
+
+```
+C:\Users\User\Desktop\FileZillaExtractor>.\FileZilla-Exporter.exe --st managed
+Exported 1 managed servers
+```
+
+```
+C:\Users\User\Desktop\FileZillaExtractor>.\FileZilla-Exporter.exe --st recent
+Exported 10 recently connected servers
+```
+
